@@ -355,5 +355,5 @@ public class Constants {
 	public static final String NO_PENDING_REQUEST_AVAILABLE_MESSAGE = "There are no approval requests pending for approval with the MDO";
 	public static final String NO_PENDING_GROUP_DESIGNATION_REQUEST_AVAILABLE_MESSAGE = "There are no approval requests pending for designation and/or group approval with the MDO";
 	public static final String WITHDRAWN = "WITHDRAWN";
-
+	public static final Object DATA_MIGRATED_SUCCESSFULLY = "data migrated successfully";
 }
