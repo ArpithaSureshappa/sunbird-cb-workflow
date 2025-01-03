@@ -71,8 +71,8 @@ public class WorkFlowMigrationImpl implements WorkflowMigration {
                                 log.warn("Missing 'fromValue' or 'toValue' for WfStatusEntity with ID: {}", wfStatusEntity.getWfId());
                                 continue;
                             }
-                            String fromValue = new ObjectMapper().writeValueAsString(fromValueMap);
-                            String toValue = new ObjectMapper().writeValueAsString(toValueMap);
+                            String fromValue = objectMapper.writeValueAsString(fromValueMap);
+                            String toValue = objectMapper.writeValueAsString(toValueMap);
                             WfStatusV2Entity wfStatusV2Entity = mapToWfStatusV2Entity(wfStatusEntity, fromValue, toValue);
                             wfStatusV2EntityList.add(wfStatusV2Entity);
                         }else {
